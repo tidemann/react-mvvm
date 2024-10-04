@@ -1,0 +1,21 @@
+import type {Meta} from '@storybook/react';
+import { {{pascalCase name}} } from './{{pascalCase name}}';
+import { {{pascalCase name}}Model } from "./{{pascalCase name}}Model.ts";
+
+const meta: Meta<typeof {{pascalCase name}}> = {
+    title: 'Components/{{titleCase (sentenceCase name)}}',
+    component: {{pascalCase name}},
+    tags: ['autodocs'],
+};
+
+export default meta;
+export const Default = (args: {vm: {{pascalCase name}}Model}) => {
+    const vm = new {{pascalCase name}}Model();
+    Object.assign(vm, args.vm);
+    return <{{pascalCase name}} vm={vm}/>;
+}
+Default.args = {
+    vm: {
+        // Add default values here
+    }
+};

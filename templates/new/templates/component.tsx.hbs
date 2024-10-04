@@ -1,0 +1,15 @@
+import {FC} from "react"
+import { observer } from 'mobx-react';
+import { {{pascalCase name}}Model } from './{{pascalCase name}}Model';
+import styles from "./{{pascalCase name}}.module.css";
+
+interface {{pascalCase name}}Props {
+  vm: {{pascalCase name}}Model;
+}
+
+export const {{pascalCase name}}: FC<{{pascalCase name}}Props> = observer(({ vm }) => (
+    <div className={ styles.{{camelCase name}} }>
+        <h4>{{titleCase (sentenceCase name)}} Component</h4>
+        <span>{vm.text}</span>
+  </div>
+));

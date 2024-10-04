@@ -1,0 +1,10 @@
+import { observable,makeObservable } from "mobx";
+
+export class {{pascalCase name}}Model {
+  // available decorators: @observable, @computed, @action
+  @observable text: string = '{{pascalCase name}} View Model';
+
+  constructor() {
+    makeObservable(this);
+  }
+}

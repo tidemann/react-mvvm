@@ -1,0 +1,7 @@
+import { expect, test } from 'vitest'
+import { {{pascalCase name}}Model } from './{{pascalCase name}}Model'
+
+test("{{pascalCase name}}Model", () => {
+    const vm = new {{pascalCase name}}Model()
+    expect(vm.text).toBe('{{pascalCase name}} View Model')
+})
